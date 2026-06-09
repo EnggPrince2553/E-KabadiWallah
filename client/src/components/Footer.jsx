@@ -61,13 +61,13 @@ const Footer = () => {
             <h4 className="text-lg font-black mb-6 uppercase tracking-widest text-primary">Get in Touch</h4>
             <ul className="space-y-4 font-medium text-gray-400 text-sm">
               <li className="flex items-center hover:text-white transition-colors cursor-pointer" onClick={openChat}>
-                <Mail size={18} className="mr-4 text-primary" /> surajpandit8112004@gmail.com
+                <Mail size={18} className="mr-4 text-primary" /> prince24080@gmail.com
               </li>
               <li className="flex items-center hover:text-white transition-colors cursor-pointer" onClick={openChat}>
-                <Phone size={18} className="mr-4 text-primary" /> +91 7080393974
+                <Phone size={18} className="mr-4 text-primary" /> +91 8303572574
               </li>
               <li className="flex items-start hover:text-white transition-colors cursor-pointer">
-                <MapPin size={18} className="mr-4 text-primary mt-1" /> Bakshi ka Talab, Lucknow, Uttar Pradesh - 226201
+                <MapPin size={18} className="mr-4 text-primary mt-1" /> phoolpur, varanasi, Uttar Pradesh - 226206
               </li>
             </ul>
           </div>

@@ -2,10 +2,11 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        if (!process.env.MONGODB_URI) {
-            throw new Error('MONGODB_URI environment variable not set');
+        const mongoUri = process.env.MONGODB_URI || process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/scrapdb';
+        if (!process.env.MONGODB_URI && !process.env.MONGO_URI) {
+            console.warn('MONGODB_URI / MONGO_URI not set, falling back to local MongoDB at mongodb://127.0.0.1:27017/scrapdb');
         }
-        const conn = await mongoose.connect(process.env.MONGODB_URI);
+        const conn = await mongoose.connect(mongoUri);
         console.log(`MongoDB Connected: ${conn.connection.host}`);
         console.log(`Database Name: ${conn.connection.name}`);
     } catch (error) {
