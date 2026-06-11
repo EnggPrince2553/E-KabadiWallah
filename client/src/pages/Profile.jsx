@@ -1,7 +1,7 @@
 import React, { useContext, useState, useRef, useEffect } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import { User, Mail, Shield, Award, Edit2, Check, X, Camera, XCircle } from 'lucide-react';
-import api from '../services/api';
+import api, { SERVER_BASE_URL } from '../services/api';
 
 const Profile = () => {
   const { user, setUser, refreshUser } = useContext(AuthContext);
@@ -35,7 +35,7 @@ const Profile = () => {
     password: ''
   });
   const [profileImage, setProfileImage] = useState(null);
-  const [imagePreview, setImagePreview] = useState(user?.profileImage ? `http://localhost:5000${user.profileImage}` : null);
+  const [imagePreview, setImagePreview] = useState(user?.profileImage ? `${SERVER_BASE_URL}${user.profileImage}` : null);
 
   if (!user) return null;
 

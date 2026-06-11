@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import api from '../services/api';
+import api, { SERVER_BASE_URL } from '../services/api';
 import Loader from '../components/Loader';
 import { Calendar, MapPin, Weight, DollarSign, Tag } from 'lucide-react';
 
@@ -54,7 +54,7 @@ const PickupHistory = () => {
               
               {pickup.image && (
                 <div className="mb-6 rounded-xl overflow-hidden aspect-video border border-gray-100">
-                  <img src={`http://localhost:5000${pickup.image}`} alt="Scrap" className="w-full h-full object-cover" />
+                  <img src={`${SERVER_BASE_URL}${pickup.image}`} alt="Scrap" className="w-full h-full object-cover" />
                 </div>
               )}
 

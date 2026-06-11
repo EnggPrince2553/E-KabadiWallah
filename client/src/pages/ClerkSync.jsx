@@ -2,6 +2,7 @@ import React, { useEffect, useContext, useState } from 'react';
 import { useAuth, useUser, useClerk } from '@clerk/clerk-react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
+import { SERVER_BASE_URL } from '../services/api';
 import axios from 'axios';
 import Loader from '../components/Loader';
 
@@ -32,7 +33,7 @@ const ClerkSync = () => {
                     
                     // Directly use raw axios to BYPASS our custom API interceptor. 
                     // This prevents the global interceptor from overwriting the Clerk Header with old local tokens!
-                    const response = await axios.post('http://localhost:5000/api/v1/auth/clerk-sync', payload, {
+                    const response = await axios.post(`${SERVER_BASE_URL}/api/v1/auth/clerk-sync`, payload, {
                         headers: { 
                             Authorization: `Bearer ${token}`
                         }

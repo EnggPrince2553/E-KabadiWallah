@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import api from '../services/api';
+import api, { SERVER_BASE_URL } from '../services/api';
 import Loader from '../components/Loader';
 import { CheckCircle, XCircle, Check, Clock, Package, X } from 'lucide-react';
 
@@ -119,10 +119,10 @@ const AdminDashboard = () => {
                     <div className="flex items-center">
                       <div 
                         className="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center mr-4 text-slate-400 overflow-hidden border border-slate-200 cursor-zoom-in group-hover:scale-110 transition-transform"
-                        onClick={() => pickup.image && setSelectedImage(`http://localhost:5000${pickup.image}`)}
+                        onClick={() => pickup.image && setSelectedImage(`${SERVER_BASE_URL}${pickup.image}`)}
                       >
                         {pickup.image ? (
-                          <img src={`http://localhost:5000${pickup.image}`} alt="" className="w-full h-full object-cover" />
+                          <img src={`${SERVER_BASE_URL}${pickup.image}`} alt="" className="w-full h-full object-cover" />
                         ) : <Package size={20} />}
                       </div>
                       <div>
