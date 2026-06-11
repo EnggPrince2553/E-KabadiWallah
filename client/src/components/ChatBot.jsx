@@ -7,8 +7,8 @@ const ChatBot = () => {
   const { isChatOpen, closeChat } = useChat();
 
   const contactInfo = {
-    phone: "+91 7080393974",
-    email: "surajpandit8112004@gmail.com"
+    phone: "+91 8303572574",
+    email: "prince24080@gmail.com"
   };
 
   return (

@@ -25,7 +25,7 @@ const ClerkSync = () => {
                     const token = await getToken();
                     const payload = {
                         clerkId: clerkUser.id,
-                        email: clerkUser.primaryEmailAddress?.emailAddress || 'no-email@kabadiwala.com',
+                        email: clerkUser.primaryEmailAddress?.emailAddress || 'no-email@ekabadiwala.com',
                         name: clerkUser.fullName || clerkUser.firstName || 'User',
                         profileImage: clerkUser.imageUrl
                     };

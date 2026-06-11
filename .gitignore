@@ -5,10 +5,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
-<<<<<<< HEAD
 .pnpm-debug.log*
-=======
->>>>>>> 6b219158e7434e295a3d744c1988831506cbb064
+
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -60,15 +58,11 @@ web_modules/
 # Optional stylelint cache
 .stylelintcache
 
-<<<<<<< HEAD
 # Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/
 .rts2_cache_es/
 .rts2_cache_umd/
-
-=======
->>>>>>> 6b219158e7434e295a3d744c1988831506cbb064
 # Optional REPL history
 .node_repl_history
 
@@ -78,21 +72,16 @@ web_modules/
 # Yarn Integrity file
 .yarn-integrity
 
-<<<<<<< HEAD
 # dotenv environment variable files (SUPER IMPORTANT TO IGNORE)
 .env
+.env.*
 .env.test
 .env.production
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-=======
-# dotenv environment variable files
-.env
-.env.*
 !.env.example
->>>>>>> 6b219158e7434e295a3d744c1988831506cbb064
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -119,8 +108,6 @@ dist
 .temp
 .cache
 
-<<<<<<< HEAD
-=======
 # Sveltekit cache directory
 .svelte-kit/
 
@@ -129,8 +116,6 @@ dist
 
 # vitepress cache directory
 **/.vitepress/cache
-
->>>>>>> 6b219158e7434e295a3d744c1988831506cbb064
 # Docusaurus cache and generated files
 .docusaurus
 
@@ -155,7 +140,7 @@ dist
 .vscode/
 *.swp
 *.core
-=======
+
 # Firebase cache directory
 .firebase/
 
@@ -177,4 +162,3 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
->>>>>>> 6b219158e7434e295a3d744c1988831506cbb064

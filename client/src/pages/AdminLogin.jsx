@@ -6,8 +6,8 @@ import { ShieldAlert } from 'lucide-react';
 const AdminLogin = () => {
   const { login, user, logout } = useContext(AuthContext);
   const navigate = useNavigate();
-  const [email, setEmail] = useState('admin@kabadiwala.com');
-  const [password, setPassword] = useState('password123');
+  const [email, setEmail] = useState('prince24080@gmail.com');
+  const [password, setPassword] = useState('prince2553');
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
